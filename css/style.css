@@ -1,5 +1,7 @@
 /*Variable*/
 /*   Fonts     */
+/*mixin*/
+/*   reset    */
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +23,7 @@ body {
 }
 .body-wrapper::before {
   content: "";
-  width: 25%;
+  width: 35%;
   height: 75%;
   background-color: #a9d6cb;
   position: absolute;
@@ -32,7 +34,7 @@ body {
   background-image: url(../img/seudo-bkg.svg);
   background-repeat: no-repeat;
   overflow-x: hidden;
-  background-position: center right;
+  background-position: -200px center;
 }
 
 .header-main {
@@ -42,7 +44,7 @@ body {
 .header-main .container {
   margin-top: 40px;
   margin-left: 40px;
-  margin-right: 40px;
+  margin-right: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -58,9 +60,47 @@ body {
   text-decoration: none;
   color: #264065;
 }
+.header-main .container .navigation-container .navigation .navigation-ul li > a:hover {
+  font-weight: 700;
+  text-decoration: underline;
+  color: #a9d6cb;
+  text-underline-offset: 4px;
+}
+.header-main .container .navigation-container .navigation .navigation-ul li > a:hover svg path {
+  stroke: #a9d6cb;
+}
 .header-main .container .buttons-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 25px;
+}
+.header-main .container .buttons-container a.button-svg svg:hover {
+  fill: #fff;
+}
+.header-main .container .buttons-container a.button1 {
+  color: #264065;
+  text-underline-offset: 4px;
+}
+.header-main .container .buttons-container a.button1:hover {
+  display: inline-block;
+  padding: 10px 24px;
+  color: #fff;
+  background-color: #264065;
+  border-radius: 1.2rem;
+  text-decoration: none;
+}
+.header-main .container .buttons-container a.button2 {
+  display: inline-block;
+  padding: 10px 24px;
+  color: #fff;
+  background-color: #264065;
+  border-radius: 1.2rem;
+  text-decoration: none;
+}
+.header-main .container .buttons-container a.button2:hover {
+  background-color: transparent !important;
+  color: #264065 !important;
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }/*# sourceMappingURL=style.css.map */

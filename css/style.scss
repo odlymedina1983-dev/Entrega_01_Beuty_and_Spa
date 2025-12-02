@@ -2,11 +2,22 @@
 $lightgray-bkg: #faf8f5;
 $dark-blue: #264065;
 $turquoise: #a9d6cb;
+$color: #fff;
 
 /*   Fonts     */
 $font-inter: "Inter", sans-serif;
 $font-poppins: "Poppins", sans-serif;
+/*mixin*/
+@mixin button-dark-blue(){
+    display: inline-block;
+    padding: 10px 24px;
+    color: $color;
+    background-color: $dark-blue;
+    border-radius: 1.2rem;
+    text-decoration: none;
+}
 
+/*   reset    */
 *{
   margin: 0;
   padding: 0;
@@ -25,7 +36,7 @@ body{
     height: 100vh;
     &::before{
     content:  '';
-    width: 25%;
+    width: 35%;
     height: 75%;    
     background-color: $turquoise;
     position: absolute;
@@ -36,7 +47,7 @@ body{
     background-image: url(../img/seudo-bkg.svg);
     background-repeat: no-repeat;
     overflow-x: hidden;
-    background-position: center right;
+    background-position: -200px center;
     }
   }
 .header-main{
@@ -45,7 +56,7 @@ body{
   .container{
     margin-top: 40px;
     margin-left: 40px;
-    margin-right: 40px;
+    margin-right: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -61,15 +72,42 @@ body{
             text-decoration: none;
             color: $dark-blue;
           }
+          li>a:hover{
+            font-weight: 700;
+            text-decoration: underline;
+            color: $turquoise;
+            text-underline-offset: 4px;
+          }
+          li > a:hover svg path {
+            stroke: $turquoise;
+          }
         }
-      }
-      
+      }      
     }
     .buttons-container{
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 25px;
+      a.button-svg svg:hover{
+        fill:$color;
+      }
+      a.button1{
+        color: $dark-blue;
+        text-underline-offset: 4px;
+      }
+      a.button1:hover{
+        @include button-dark-blue();
+      }
+      a.button2{
+        @include button-dark-blue();
+      }
+      a.button2:hover{
+        background-color: transparent !important; 
+        color: $dark-blue !important;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+      }
     }
   }
 }    
