@@ -29,9 +29,20 @@ body {
   right: 0;
   bottom: 0;
   z-index: -1;
+  background-image: url(../img/seudo-bkg.svg);
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  background-position: center right;
 }
 
+.header-main {
+  margin-left: 40px;
+  margin-right: 40px;
+}
 .header-main .container {
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -42,5 +53,14 @@ body {
   gap: 50px;
 }
 .header-main .container .navigation-container .navigation .navigation-ul li > a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
   text-decoration: none;
+  color: #264065;
+}
+.header-main .container .buttons-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
 }/*# sourceMappingURL=style.css.map */

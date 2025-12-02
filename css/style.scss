@@ -33,10 +33,19 @@ body{
     right: 0;
     bottom: 0;
     z-index: -1;
+    background-image: url(../img/seudo-bkg.svg);
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    background-position: center right;
     }
   }
 .header-main{
+  margin-left: 40px;
+  margin-right: 40px;
   .container{
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -47,11 +56,20 @@ body{
           list-style: none;
           gap: 50px;
           li>a{
+            font-family: $font-poppins;
+            font-weight: 500;
             text-decoration: none;
+            color: $dark-blue;
           }
         }
       }
       
+    }
+    .buttons-container{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
     }
   }
 }    
