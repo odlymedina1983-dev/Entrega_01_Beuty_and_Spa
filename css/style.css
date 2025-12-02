@@ -133,6 +133,91 @@ body {
   color: #909090;
   line-height: 2rem;
 }
+.heroe-container .heroe-left-column .heroe-buttons-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.heroe-container .heroe-left-column .heroe-buttons-container a.button1 {
+  display: inline-block;
+  padding: 10px 24px;
+  color: #fff;
+  background-color: #264065;
+  border-radius: 1.2rem;
+  text-decoration: none;
+}
+.heroe-container .heroe-left-column .heroe-buttons-container a.button1:hover {
+  background-color: transparent !important;
+  color: #264065 !important;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: fill 0.3s ease;
+}
+.heroe-container .heroe-left-column .heroe-buttons-container a.button2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #264065;
+  text-decoration: none;
+}
+.heroe-container .heroe-left-column .heroe-buttons-container a.button2 svg {
+  fill: #264065;
+}
+.heroe-container .heroe-left-column .heroe-buttons-container a.button2:hover {
+  color: #a9d6cb;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: fill 0.3s ease;
+}
+.heroe-container .heroe-left-column .heroe-buttons-container a.button2:hover svg {
+  fill: #a9d6cb;
+}
+.heroe-container .heroe-left-column .heroe-cards {
+  background-color: #fff;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 15px;
+  padding: 20px;
+}
+.heroe-container .heroe-left-column .heroe-cards .heroe-cards-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.heroe-container .heroe-left-column .heroe-cards .heroe-cards-info h2 {
+  color: #264065;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.heroe-container .heroe-left-column .heroe-cards .heroe-cards-info h3 {
+  color: #909090;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  text-align: center;
+}
+.heroe-container .heroe-left-column .heroe-cards .heroe-cards-info .heroe-cards-info-svg {
+  background-color: #a9d6cb;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heroe-container .heroe-left-column .heroe-cards .heroe-cards-info .heroe-cards-info-svg svg {
+  fill: #264065;
+}
 .heroe-container .heroe-right-column {
   position: relative;
 }/*# sourceMappingURL=style.css.map */

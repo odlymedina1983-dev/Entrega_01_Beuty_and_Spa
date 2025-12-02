@@ -138,6 +138,88 @@ body{
       color: $gray-medium;
       line-height: 2rem;
     }
+    .heroe-buttons-container{
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: flex-start;
+      a.button1{
+        @include button-dark-blue();
+      }
+      a.button1:hover{
+        background-color: transparent !important; 
+        color: $dark-blue !important;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+        transition: fill .3s ease;
+      }
+      a.button2{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: $dark-blue;
+        text-decoration: none;
+        svg{
+          fill: $dark-blue; 
+        }
+      }
+      a.button2:hover{
+        color: $turquoise;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+        svg{
+          fill: $turquoise;          
+        }
+        transition: fill .3s ease;
+      }
+      
+      
+    }
+    .heroe-cards{
+      background-color: $color;
+      width: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 15px;
+      padding: 20px;
+      .heroe-cards-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        h2{
+          color: $dark-blue;
+          font-family: $font-poppins;
+          font-size: 1.8rem;
+          font-weight: 400;
+          margin-bottom: 0;
+          padding-bottom: 0;
+        }
+        h3{
+          color: $gray-medium;
+          font-family: $font-poppins;
+          font-size: 0.8rem;
+          line-height: 1rem;
+          text-align: center;
+        }
+        .heroe-cards-info-svg{
+          background-color: $turquoise;
+          border-radius: 50%;
+          width: 60px;
+          height: 60px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          svg{
+            fill: $dark-blue;
+          }
+        }
+      }
+    }
   }
   .heroe-right-column{
     position: relative;
