@@ -38,8 +38,8 @@ body {
 }
 
 .header-main {
-  margin-left: 40px;
   margin-right: 40px;
+  margin-bottom: 40px;
 }
 .header-main .container {
   margin-top: 40px;
@@ -103,4 +103,36 @@ body {
   color: #264065 !important;
   text-decoration: underline;
   text-underline-offset: 4px;
+}
+
+.heroe-container {
+  margin-left: 40px;
+  width: 100%;
+  max-width: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.heroe-container .heroe-left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.heroe-container .heroe-left-column h1 {
+  margin-top: 40px;
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 3.5rem;
+  color: #264065;
+  line-height: 4.5rem;
+}
+.heroe-container .heroe-left-column h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 1.3rem;
+  color: #909090;
+  line-height: 2rem;
+}
+.heroe-container .heroe-right-column {
+  position: relative;
 }/*# sourceMappingURL=style.css.map */

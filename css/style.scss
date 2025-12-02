@@ -3,6 +3,7 @@ $lightgray-bkg: #faf8f5;
 $dark-blue: #264065;
 $turquoise: #a9d6cb;
 $color: #fff;
+$gray-medium: #909090;
 
 /*   Fonts     */
 $font-inter: "Inter", sans-serif;
@@ -50,9 +51,9 @@ body{
     background-position: -200px center;
     }
   }
-.header-main{
-  margin-left: 40px;
+.header-main{  
   margin-right: 40px;
+  margin-bottom: 40px;
   .container{
     margin-top: 40px;
     margin-left: 40px;
@@ -109,5 +110,36 @@ body{
         text-underline-offset: 4px;
       }
     }
+  }
+}
+.heroe-container{
+  margin-left: 40px;
+  width: 100%;
+  max-width: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  .heroe-left-column{    
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    h1{
+      margin-top: 40px;
+      display: inline-block;
+      font-family: $font-poppins;
+      font-weight: 800;
+      font-size: 3.5rem;
+      color: $dark-blue;
+      line-height: 4.5rem;
+    }
+    h3{
+      font-family: $font-poppins;
+      font-weight: 300;
+      font-size: 1.3rem;
+      color: $gray-medium;
+      line-height: 2rem;
+    }
+  }
+  .heroe-right-column{
+    position: relative;
   }
 }    
