@@ -1,0 +1,18 @@
+/*Variable*/
+$lightgray-bkg: #faf8f5;
+$dark-blue: #264065;
+$turquoise: #a9d6cb;
+
+/*   Fonts     */
+$font-inter: "Inter", sans-serif;
+$font-poppins: "Poppins", sans-serif;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: $lightgray-bkg;
+  font-family: $font-inter;
+}
