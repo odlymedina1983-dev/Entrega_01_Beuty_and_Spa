@@ -9,4 +9,38 @@
 body {
   background-color: #faf8f5;
   font-family: "Inter", sans-serif;
+}
+
+.body-wrapper {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  height: 100vh;
+}
+.body-wrapper::before {
+  content: "";
+  width: 25%;
+  height: 75%;
+  background-color: #a9d6cb;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.header-main .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-main .container .navigation-container .navigation .navigation-ul {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+}
+.header-main .container .navigation-container .navigation .navigation-ul li > a {
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */

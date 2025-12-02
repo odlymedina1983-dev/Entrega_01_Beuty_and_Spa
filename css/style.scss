@@ -16,3 +16,42 @@ body{
   background-color: $lightgray-bkg;
   font-family: $font-inter;
 }
+.body-wrapper{ 
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    height: 100vh;
+    &::before{
+    content:  '';
+    width: 25%;
+    height: 75%;    
+    background-color: $turquoise;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    }
+  }
+.header-main{
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .navigation-container{
+      .navigation{
+        .navigation-ul{
+          display: flex;
+          list-style: none;
+          gap: 50px;
+          li>a{
+            text-decoration: none;
+          }
+        }
+      }
+      
+    }
+  }
+}    
