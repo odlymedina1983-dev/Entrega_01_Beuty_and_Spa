@@ -223,5 +223,95 @@ body{
   }
   .heroe-right-column{
     position: relative;
+    img{
+      position: absolute;
+      left: -15%;
+    }
+    .heroe-image-cards-1::before{
+      content: "\05F4";
+      font-family: $font-poppins;
+      font-weight: 800;
+      font-size: 3rem;
+      margin: 0;
+      padding: 0;
+      margin-bottom: 10px;
+      line-height: 0;
+      font-style: italic;
+      color: $dark-blue;
+      display: block;
+    }
+    .heroe-image-cards-1{
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      border-radius: 15px;
+      padding: 20px;
+      position: absolute;
+      top: 30%;
+      right: 0;
+      background: linear-gradient(
+                  135deg,
+                  rgba(255, 255, 255, 0.3),
+                  rgba(255, 255, 255, 0.2)
+      ); 
+      backdrop-filter: blur(18px);
+      p{
+        color: $dark-blue;
+        font-family: $font-poppins;
+        font-weight: 300;
+        font-size: 0.9rem;
+        line-height: 1.3rem;
+        margin-bottom: 5px;
+      }
+      h3{
+        font-family: $font-poppins;
+        font-weight: 600;
+        color: $dark-blue;
+        font-size: 0.9rem;
+      }      
+    }
+    .heroe-image-cards-2::before{
+      content: "\05F4";
+      font-family: $font-poppins;
+      font-weight: 800;
+      font-size: 3rem;
+      margin: 0;
+      padding: 0;
+      margin-bottom: 10px;
+      line-height: 0;
+      font-style: italic;
+      color: $dark-blue;
+      display: block;
+    }
+    .heroe-image-cards-2{
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      border-radius: 15px;
+      padding: 20px;
+      position: absolute;
+      top: 70%;
+      right: 10%;
+      background: linear-gradient(
+                  135deg,
+                  rgba(255, 255, 255, 0.3),
+                  rgba(255, 255, 255, 0.2)
+      ); 
+      backdrop-filter: blur(18px); 
+      p{
+        color: $dark-blue;
+        font-family: $font-poppins;
+        font-weight: 300;
+        font-size: 0.9rem;
+        line-height: 1.3rem;
+        margin-bottom: 5px;
+      }
+      h3{
+        font-family: $font-poppins;
+        font-weight: 600;
+        color: $dark-blue;
+        font-size: 0.9rem;
+      } 
+    }
   }
 }    
